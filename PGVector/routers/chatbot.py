@@ -22,5 +22,5 @@ def get_db():
 
 
 @chatbot.post("/chatbot/")
-def chatbot(db: Session = Depends(get_db)):
+def chat(db: Session = Depends(get_db)):
     pass
