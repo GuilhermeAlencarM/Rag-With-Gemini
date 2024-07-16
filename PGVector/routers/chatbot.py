@@ -21,6 +21,6 @@ def get_db():
         db.close()
 
 
-@chatbot.post("/users/")
-def create_user(db: Session = Depends(get_db)):
+@chatbot.post("/chatbot/")
+def chatbot(db: Session = Depends(get_db)):
     pass
